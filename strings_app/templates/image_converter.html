@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Conversor de imagens</title>
+{% endblock title %}
+{% block content %}
+
+
+<br>
+<div class="form-group col-lg-5" style='text-align:center' id="center">
+    <h1 class="display-4">CONVERSOR DE IMAGENS EM MASSA</h1>
+    <br>
+    <p class="lead">Converte imagens para os formatos .bmp, .png e .jpg, de um diretório e todos seus subdiretórios.</p>
+    <br>
+    <div class="col-sm">
+        <a href="https://github.com/carolstoffel/Image-converter"><img
+                src="{%  static 'images/conversor_imagens.png' %}" alt="git"></a>
+    </div>
+    <br>
+    <br>
+</div>
+
+
+{% endblock content %}

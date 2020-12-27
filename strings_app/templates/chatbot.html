@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Chatbot</title>
+{% endblock title %}
+{% block content %}
+
+
+<br>
+<div class="form-group col-lg-5" style='text-align:center' id="center">
+    <h1 class="display-4">CHATBOT</h1>
+    <br>
+    <p class="lead">Chatbot desenvolvido com o framework rasa, retorna a temperatura e a umidade.</p>
+    <br>
+    <div class="col-sm">
+        <a href="https://github.com/carolstoffel/rasa_chatbot_weather"><img src="{%  static 'images/chatbot.png' %}"
+                width="300" height="450" alt="git"></a>
+    </div>
+    <br>
+    <br>
+</div>
+
+<div id="webchat" />
+<script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.min.js"></script>
+
+// Or you can replace latest with a specific version
+<script>
+    WebChat.default.init({
+        selector: "#webchat",
+        customData: {
+            "language": "pt"
+        }, // arbitrary custom data. Stay minimal as this will be added to the socket
+        /*socketUrl: "http://localhost:5005",*/
+        socketUrl: "http://2c7c025f14b9.ngrok.io",
+        socketPath: "/socket.io/",
+        title: "Sarah",
+        subtitle: "Eu sou um bot!",
+
+    })
+</script>
+{% endblock content %}

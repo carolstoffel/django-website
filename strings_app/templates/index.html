@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Caroline Stoffel Giacomini</title>
+{% endblock title %}
+
+{% block content %}
+
+<br>
+<div class="form-group col-lg-5" style='text-align:center' id="center">
+    <h1 class="display-4">Olá!</h1>
+    <br>
+    <p class="lead">Este website foi criado utilizando o framework Django para o backend, com o objetivo de
+        praticar minhas habilidades em programação e exibir os projetos já realizados utilizando a linguagem Python.
+        Ainda está em construção :)</p>
+    <br>
+    <hr class="my-4">
+    <div>
+        <h1 class="display-4">Sobre mim</h1>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <a href="https://github.com/carolstoffel"><img src="{%  static 'images/caroline.jpg' %}" width="300"
+                            height="350" alt="git"></a>
+                </div>
+                <div class="col-sm">
+                    Caroline Stoffel Giacomini, desenvolvedora de software e estudante do último ano de Big Data e
+                    Inteligência Analítica, apaixonada por Python.
+                    Tenho 28 anos, resido em Toledo, Paraná.
+                </div>
+                <div class="col-sm">
+                    <a href="https://github.com/carolstoffel"><img src="{%  static 'images/icon_github.png' %}"
+                            width="40" height="40" alt="git"></a>
+                    <br>
+                    <br>
+                    <a href="https://www.linkedin.com/in/carolinestoffelgiacomini/"><img
+                            src="{%  static 'images/icon_linkedin.png' %}" width="40" height="40" alt="in"></a>
+                    <br>
+                    <br>
+                    <a href="https://www.instagram.com/carolinestoffel/"><img
+                            src="{%  static 'images/icon_instagram.png' %}" width="40" height="40" alt="insta"></a>
+                    <br>
+                    <br>
+                    <a href="https://www.facebook.com/carolinestoffelgiacomini"><img
+                            src="{%  static 'images/icon_facebook.png' %}" width="40" height="40" alt="fb"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}

@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block css_style %}
+<link rel="stylesheet" type="text/css" href="{% static 'mystyle.css' %}">
+{% endblock css_style %}
+
+{% block title %}
+<title>Manipulando strings</title>
+{% endblock title %}
+
+{% block content %}
+
+
+<br>
+<form method="POST" div class="form-group col-lg-5" style='text-align:center' id="center">
+    {% csrf_token %}
+    <h1 class="display-4">CONVERSOR DE TEXTO</h1>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="task"
+        placeholder="Digite aqui o texto"></textarea>
+    </div>
+    <br>
+    <div class="btn-group" role="group" aria-label="Basic radio toggle button group" id="radio">
+        <input type="radio" class="btn-check" name="btnradio1" id="btnradio1" autocomplete="off"
+            style="margin-left: 20px;">
+        <label class="btn btn-outline-primary" for="btnradio1" style="margin-left: 5px;">MAIÚSCULAS</label>
+
+        <input type="radio" class="btn-check" name="btnradio2" id="btnradio2" autocomplete="off"
+            style="margin-left: 20px;">
+        <label class="btn btn-outline-primary" for="btnradio2" style="margin-left: 5px;">minúsculas</label>
+
+        <input type="radio" class="btn-check" name="btnradio3" id="btnradio3" autocomplete="off"
+            style="margin-left: 20px;">
+        <label class="btn btn-outline-primary" for="btnradio3" style="margin-left: 5px;">AlEaTóRiAs</label>
+
+        <br>
+        <br>
+        <input type="radio" class="btn-check" name="btnradio4" id="btnradio4" autocomplete="off"
+            style="margin-left: 20px;">
+        <label class="btn btn-outline-primary" for="btnradio4" style="margin-left: 5px;">Inverter o texto</label>
+
+    </div>
+    <br>
+    <br>
+    <button type="submit" class="btn btn-primary col-lg-2">Converter</button>
+    <br>
+    <br>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder=>{{ string_text }}</textarea>
+
+</form>
+
+
+{% endblock content %}

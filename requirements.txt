@@ -1,0 +1,5 @@
+Django==2.2.10
+django-environ==0.4.5
+pep8==1.7.1
+pytz==2020.4
+sqlparse==0.4.1

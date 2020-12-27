@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_style %}
+<link rel="stylesheet" href="mystyle.css">
+{% endblock css_style %}
+
+
+{% block title %}
+<title>Contato</title>
+{% endblock title %}
+
+{% block context_text %}
+<div class="jumbotron flex-column col-lg" id="index">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+                featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
+        <a href="https://github.com/carolstoffel"><img src="{%  static 'images/icon_github.png' %}" width="40"
+                        height="40" alt="git"></a>
+        <a href="https://www.linkedin.com/in/carolinestoffelgiacomini/"><img
+                        src="{%  static 'images/icon_linkedin.png' %}" width="40" height="40" alt="in"></a>
+        <a href="https://www.instagram.com/carolinestoffel/"><img src="{%  static 'images/icon_instagram.png' %}"
+                        width="40" height="40" alt="insta"></a>
+        <a href="https://www.facebook.com/carolinestoffelgiacomini"><img src="{%  static 'images/icon_facebook.png' %}"
+                        width="40" height="40" alt="fb"></a>
+</div>
+{% endblock context_text %}

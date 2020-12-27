@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block css_style %}
+<link rel="stylesheet" type="text/css" href="{% static 'mystyle.css' %}">
+{% endblock css_style %}
+
+{% block title %}
+<title>Caroline Stoffel Giacomini</title>
+{% endblock title %}
+
+
+{% block content %}
+<div class="wrapper">
+    <div class="sidebar">
+        <h2>PROJETOS</h2>
+        <ul>
+            <li><a href="{% url 'manip_strings' %}"><i class="fas fa-home"></i>STRINGS</a></li>
+        </ul>
+    </div>
+</div>
+{% endblock content %}
