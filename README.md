@@ -5,5 +5,7 @@ O website pode ser acessado através do link:
 
 
 ### Screenshoot
-![](https://ibb.co/WnXC296)
+![](https://i.ibb.co/y0C2QTX/Screenshot-2.png)
 > Website com Django
+
+
